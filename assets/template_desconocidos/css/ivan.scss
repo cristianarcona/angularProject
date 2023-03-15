@@ -1,0 +1,62 @@
+/*variables*/
+$color-uno:rgb(24, 24, 24);
+$color-dos:rgb(255, 255, 255);
+$color-tres:rgba(16, 140, 208, 0.7);
+
+body{
+    background: $color-uno;
+    }
+nav{
+    background: $color-uno;
+
+    .navbar-brand{
+        color: $color-dos;    
+    }
+    .nav-link{
+        color: $color-dos;
+    }
+    .navbar-toggler{
+        background: rgba(255, 255, 255, 0.7);
+    }
+}    
+section{
+    .about-text{
+        h2{color: $color-dos;
+        font-weight: bold;}    
+        p{color: $color-dos;}
+        
+    }
+    .team{
+        color: $color-uno;
+    }
+    .section-header{
+        color: $color-dos;
+        h2{font-weight: bold;}
+    }
+}
+@mixin fondotexto($fondo:$color-tres,$texto:$color-dos){
+    margin: 0 auto;
+    width: max-content;
+    background: $fondo;
+    color: $texto;
+}
+.carousel-inner{
+    max-height: 39rem;
+    h5{
+        @include fondotexto();
+    }   
+    .desc{
+        @include fondotexto(rgba(255, 255, 255, 0.7),$color-uno);
+    }
+  }
+
+.card-body{
+    background: rgb(255, 221, 0);
+    box-shadow: 2px 2px 2px rgba(255, 221, 0, 0.5);
+}
+@media only screen and (max-width: 600px){
+    .carousel-inner{
+        width: 35rem;
+    }
+    
+ }

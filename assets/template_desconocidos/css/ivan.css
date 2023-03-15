@@ -1,0 +1,47 @@
+/*variables*/
+body {
+  background: #181818; }
+
+nav {
+  background: #181818; }
+  nav .navbar-brand {
+    color: white; }
+  nav .nav-link {
+    color: white; }
+  nav .navbar-toggler {
+    background: rgba(255, 255, 255, 0.7); }
+
+section .about-text h2 {
+  color: white;
+  font-weight: bold; }
+section .about-text p {
+  color: white; }
+section .team {
+  color: #181818; }
+section .section-header {
+  color: white; }
+  section .section-header h2 {
+    font-weight: bold; }
+
+.carousel-inner {
+  max-height: 39rem; }
+  .carousel-inner h5 {
+    margin: 0 auto;
+    width: max-content;
+    background: rgba(16, 140, 208, 0.7);
+    color: white; }
+  .carousel-inner .desc {
+    margin: 0 auto;
+    width: max-content;
+    background: rgba(255, 255, 255, 0.7);
+    color: #181818; }
+
+.card-body {
+  background: #ffdd00;
+  box-shadow: 2px 2px 2px rgba(255, 221, 0, 0.5); }
+
+@media only screen and (max-width: 600px) {
+  .carousel-inner {
+    width: 35rem; } }
+
+/*# sourceMappingURL=ivan.css.map */

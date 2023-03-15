@@ -1,0 +1,45 @@
+//Variables
+$color-letras:rgb(51, 48, 48);
+$tamano-subtitulo:25px;
+$tamano-letras:15px;
+
+body{
+  background-color: rgb(240, 244, 245);
+}
+
+h4{
+  color: $color-letras;
+  font-size: $tamano-subtitulo;
+}
+h2{
+  color:black;
+  font-size: $tamano-subtitulo;
+}
+p{
+  font-size: $tamano-letras;
+}
+form{
+  background-color: rgb(245, 250, 234);
+}
+
+
+
+
+@media only screen and (max-width:700px){
+  body{
+    background-color: rgb(214, 243, 157);
+  }
+  h4, h2{
+    color: rgb(52, 91, 143);  
+    font-size: 20px;
+  }
+  p{
+    font-size: 12px;
+    color: rgb(138, 10, 10);
+  }
+  form{
+    background-color: rgb(210, 231, 162);
+  }
+ 
+}
+  
